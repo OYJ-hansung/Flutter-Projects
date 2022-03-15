@@ -16,7 +16,7 @@ class Quiz extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Questiion(
+        Question(
           questions[questionIndex]['questionText'],
         ),
         ...(questions[questionIndex]['answers'] as List<Map<String, Object>>)
