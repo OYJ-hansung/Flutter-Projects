@@ -22,11 +22,11 @@ class _TabsScreenState extends State<TabsScreen> {
     _pages = [
       {
         'page': CategoriesScreen(),
-        'title': 'Categories',
+        'title': '100대 명산',
       },
       {
         'page': FavoritesScreen(widget.favoriteMeals),
-        'title': 'Your Favorite',
+        'title': '지도',
       },
     ];
 
@@ -59,13 +59,13 @@ class _TabsScreenState extends State<TabsScreen> {
         items: [
           BottomNavigationBarItem(
             backgroundColor: Theme.of(context).primaryColor,
-            icon: Icon(Icons.category),
-            label: 'Categories',
+            icon: Icon(Icons.landscape),
+            label: '100대 명산',
           ),
           BottomNavigationBarItem(
             backgroundColor: Theme.of(context).primaryColor,
-            icon: Icon(Icons.star),
-            label: 'Favorites',
+            icon: Icon(Icons.map),
+            label: '등산 지도',
           ),
         ],
       ),

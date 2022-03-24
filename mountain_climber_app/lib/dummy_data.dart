@@ -5,53 +5,93 @@ import './models/meal.dart';
 const DUMMY_CATEGORIES = const [
   Category(
     id: 'c1',
-    title: 'Italian',
+    title: '설악산',
     color: Colors.purple,
+    imageUrl:
+        'http://blogs.chosun.com/pichy91/wp-content/uploads/sites/2/2014/06/20130920_140319_156005c5baf40ff51a327f1c34f2975b.jpg',
+    difficulty: Difficulty.Hard,
+    time: '5시간 20분',
   ),
   Category(
     id: 'c2',
-    title: 'Quick & Easy',
+    title: '지리산',
     color: Colors.red,
+    imageUrl:
+        'https://pds.joongang.co.kr/news/component/htmlphoto_mmdata/202111/04/480408b2-383a-4b04-92c8-6f737e8d60f4.jpg',
+    difficulty: Difficulty.Hard,
+    time: '5시간 40분',
   ),
   Category(
     id: 'c3',
-    title: 'Hamburgers',
+    title: '속리산',
     color: Colors.orange,
+    imageUrl:
+        'http://san.chosun.com/site/data/img_dir/2021/10/26/2021102600136_0.jpg',
+    difficulty: Difficulty.Simple,
+    time: '3시간 20분',
   ),
   Category(
     id: 'c4',
-    title: 'German',
+    title: '감악산',
     color: Colors.amber,
+    imageUrl:
+        'https://upload.wikimedia.org/wikipedia/commons/3/31/Gamaksan_Bridge_1.jpg',
+    difficulty: Difficulty.Challenging,
+    time: '6시간 00분',
   ),
   Category(
     id: 'c5',
-    title: 'Light & Lovely',
+    title: '계방산',
     color: Colors.blue,
+    imageUrl:
+        'https://www.sisaon.co.kr/news/photo/202001/107887_110984_419.jpg',
+    difficulty: Difficulty.Challenging,
+    time: '5시간 10분',
   ),
   Category(
     id: 'c6',
-    title: 'Exotic',
+    title: '관악산',
     color: Colors.green,
+    imageUrl:
+        'https://ww.namu.la/s/e64381c1ee1cf6e9faad329f2628451e2f1d0e4fddf58dfbd0f26395cc2277c21def121bc804aa5a786e542c02292ed03a1dd845ab374992d91e5e1b16220df012382614d0e89d22ff0e7b38e7c94ccd5f1f630813754a0df569b6d5bf78cb7c04d77d765a317590b6e5d2b38ecbc70b',
+    difficulty: Difficulty.Simple,
+    time: '2시간 20분',
   ),
   Category(
     id: 'c7',
-    title: 'Breakfast',
+    title: '금수산',
     color: Colors.lightBlue,
+    imageUrl:
+        'http://san.chosun.com/site/data/img_dir/2018/07/31/2018073101630_0.jpg',
+    difficulty: Difficulty.Hard,
+    time: '4시간 40분',
   ),
   Category(
     id: 'c8',
-    title: 'Asian',
+    title: '내장산',
     color: Colors.lightGreen,
+    imageUrl:
+        'http://san.chosun.com/site/data/img_dir/2019/10/23/2019102301330_0.jpg',
+    difficulty: Difficulty.Simple,
+    time: '3시간 50분',
   ),
   Category(
     id: 'c9',
-    title: 'French',
+    title: '두타산',
     color: Colors.pink,
+    imageUrl:
+        'https://pds.joongang.co.kr/news/component/htmlphoto_mmdata/202107/01/286ad0cf-81fe-41d5-be81-9bfce614615d.jpg',
+    difficulty: Difficulty.Simple,
+    time: '4시간 20분',
   ),
   Category(
     id: 'c10',
-    title: 'Summer',
+    title: '명성산',
     color: Colors.teal,
+    imageUrl:
+        'http://san.chosun.com/site/data/img_dir/2020/10/26/2020102601051_0.jpg',
+    difficulty: Difficulty.Challenging,
+    time: '5시간 50분',
   ),
 ];
 
@@ -65,8 +105,7 @@ const DUMMY_MEALS = const [
     title: 'Spaghetti with Tomato Sauce',
     affordability: Affordability.Affordable,
     complexity: Complexity.Simple,
-    imageUrl:
-        'https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Spaghetti_Bolognese_mit_Parmesan_oder_Grana_Padano.jpg/800px-Spaghetti_Bolognese_mit_Parmesan_oder_Grana_Padano.jpg',
+    imageUrl: 'https://img.siksinhot.com/article/1571808806934051.jpeg',
     duration: 20,
     ingredients: [
       '4 Tomatoes',
@@ -98,8 +137,7 @@ const DUMMY_MEALS = const [
     title: 'Toast Hawaii',
     affordability: Affordability.Affordable,
     complexity: Complexity.Simple,
-    imageUrl:
-        'https://cdn.pixabay.com/photo/2018/07/11/21/51/toast-3532016_1280.jpg',
+    imageUrl: 'https://img.siksinhot.com/article/1571808806934051.jpeg',
     duration: 10,
     ingredients: [
       '1 Slice White Bread',
@@ -127,8 +165,7 @@ const DUMMY_MEALS = const [
     title: 'Classic Hamburger',
     affordability: Affordability.Pricey,
     complexity: Complexity.Simple,
-    imageUrl:
-        'https://cdn.pixabay.com/photo/2014/10/23/18/05/burger-500054_1280.jpg',
+    imageUrl: 'https://img.siksinhot.com/article/1571808806934051.jpeg',
     duration: 45,
     ingredients: [
       '300g Cattle Hack',
@@ -158,8 +195,7 @@ const DUMMY_MEALS = const [
     title: 'Wiener Schnitzel',
     affordability: Affordability.Luxurious,
     complexity: Complexity.Challenging,
-    imageUrl:
-        'https://cdn.pixabay.com/photo/2018/03/31/19/29/schnitzel-3279045_1280.jpg',
+    imageUrl: 'https://img.siksinhot.com/article/1571808806934051.jpeg',
     duration: 60,
     ingredients: [
       '8 Veal Cutlets',
@@ -195,8 +231,7 @@ const DUMMY_MEALS = const [
     title: 'Salad with Smoked Salmon',
     affordability: Affordability.Luxurious,
     complexity: Complexity.Simple,
-    imageUrl:
-        'https://cdn.pixabay.com/photo/2016/10/25/13/29/smoked-salmon-salad-1768890_1280.jpg',
+    imageUrl: 'https://img.siksinhot.com/article/1571808806934051.jpeg',
     duration: 15,
     ingredients: [
       'Arugula',
@@ -230,8 +265,7 @@ const DUMMY_MEALS = const [
     title: 'Delicious Orange Mousse',
     affordability: Affordability.Affordable,
     complexity: Complexity.Hard,
-    imageUrl:
-        'https://cdn.pixabay.com/photo/2017/05/01/05/18/pastry-2274750_1280.jpg',
+    imageUrl: 'https://img.siksinhot.com/article/1571808806934051.jpeg',
     duration: 240,
     ingredients: [
       '4 Sheets of Gelatine',
@@ -265,8 +299,7 @@ const DUMMY_MEALS = const [
     title: 'Pancakes',
     affordability: Affordability.Affordable,
     complexity: Complexity.Simple,
-    imageUrl:
-        'https://cdn.pixabay.com/photo/2018/07/10/21/23/pancake-3529653_1280.jpg',
+    imageUrl: 'https://img.siksinhot.com/article/1571808806934051.jpeg',
     duration: 20,
     ingredients: [
       '1 1/2 Cups all-purpose Flour',
@@ -296,8 +329,7 @@ const DUMMY_MEALS = const [
     title: 'Creamy Indian Chicken Curry',
     affordability: Affordability.Pricey,
     complexity: Complexity.Challenging,
-    imageUrl:
-        'https://cdn.pixabay.com/photo/2018/06/18/16/05/indian-food-3482749_1280.jpg',
+    imageUrl: 'https://img.siksinhot.com/article/1571808806934051.jpeg',
     duration: 35,
     ingredients: [
       '4 Chicken Breasts',
@@ -329,8 +361,7 @@ const DUMMY_MEALS = const [
     title: 'Chocolate Souffle',
     affordability: Affordability.Affordable,
     complexity: Complexity.Hard,
-    imageUrl:
-        'https://cdn.pixabay.com/photo/2014/08/07/21/07/souffle-412785_1280.jpg',
+    imageUrl: 'https://img.siksinhot.com/article/1571808806934051.jpeg',
     duration: 45,
     ingredients: [
       '1 Teaspoon melted Butter',
@@ -380,8 +411,7 @@ const DUMMY_MEALS = const [
     title: 'Asparagus Salad with Cherry Tomatoes',
     affordability: Affordability.Luxurious,
     complexity: Complexity.Simple,
-    imageUrl:
-        'https://cdn.pixabay.com/photo/2018/04/09/18/26/asparagus-3304997_1280.jpg',
+    imageUrl: 'https://img.siksinhot.com/article/1571808806934051.jpeg',
     duration: 30,
     ingredients: [
       'White and Green Asparagus',

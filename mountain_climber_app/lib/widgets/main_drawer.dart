@@ -26,12 +26,12 @@ class MainDrawer extends StatelessWidget {
       child: Column(
         children: [
           Container(
-            height: 120,
+            height: 100,
             width: double.infinity,
-            padding: EdgeInsets.all(20),
+            padding: EdgeInsets.only(left: 20, top: 30),
             alignment: Alignment.centerLeft,
             color: Theme.of(context).accentColor,
-            child: Text('Cooking Up!',
+            child: Text('허동여지도',
                 style: TextStyle(
                     fontWeight: FontWeight.w900,
                     fontSize: 30,
@@ -41,14 +41,14 @@ class MainDrawer extends StatelessWidget {
             height: 20,
           ),
           buildListTile(
-            'Meals',
+            '맛집 지도',
             Icons.restaurant,
             () {
               Navigator.of(context).pushReplacementNamed('/');
             },
           ),
           buildListTile(
-            'Filters',
+            '등산 지도',
             Icons.settings,
             () {
               Navigator.of(context)
