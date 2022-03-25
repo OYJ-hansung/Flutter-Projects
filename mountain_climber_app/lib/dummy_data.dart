@@ -97,15 +97,17 @@ const DUMMY_CATEGORIES = const [
 
 const DUMMY_MEALS = const [
   Meal(
+    location: '강원 춘천시 남산면 종자리로 42',
     id: 'm1',
     categories: [
       'c1',
       'c2',
     ],
-    title: 'Spaghetti with Tomato Sauce',
+    title: '38MILE',
     affordability: Affordability.Affordable,
     complexity: Complexity.Simple,
-    imageUrl: 'https://img.siksinhot.com/article/1571808806934051.jpeg',
+    imageUrl:
+        'https://search.pstatic.net/common/?autoRotate=true&quality=95&type=w750&src=https%3A%2F%2Fmyplace-phinf.pstatic.net%2F20220311_135%2F1646997651746mHu1d_JPEG%2Fupload_e57b483360655dea2c13f7748e2ae785.jpg',
     duration: 20,
     ingredients: [
       '4 Tomatoes',
@@ -130,14 +132,16 @@ const DUMMY_MEALS = const [
     isLactoseFree: true,
   ),
   Meal(
+    location: '충북 충주시 충원대로 55',
     id: 'm2',
     categories: [
       'c2',
     ],
-    title: 'Toast Hawaii',
+    title: '카페 단월',
     affordability: Affordability.Affordable,
     complexity: Complexity.Simple,
-    imageUrl: 'https://img.siksinhot.com/article/1571808806934051.jpeg',
+    imageUrl:
+        'https://search.pstatic.net/common/?autoRotate=true&quality=95&type=w750&src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20190908_254%2F1567942262934F1Xrs_JPEG%2FYtq7hTf00vpEMYRiQCp8nop4.jpg',
     duration: 10,
     ingredients: [
       '1 Slice White Bread',
@@ -157,15 +161,17 @@ const DUMMY_MEALS = const [
     isLactoseFree: false,
   ),
   Meal(
+    location: '충북 충주시 매봉재길 57',
     id: 'm3',
     categories: [
       'c2',
       'c3',
     ],
-    title: 'Classic Hamburger',
+    title: '호숫가애',
     affordability: Affordability.Pricey,
     complexity: Complexity.Simple,
-    imageUrl: 'https://img.siksinhot.com/article/1571808806934051.jpeg',
+    imageUrl:
+        'https://search.pstatic.net/common/?autoRotate=true&quality=95&type=w750&src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20181227_60%2F1545874826230X78L5_JPEG%2FYwpAuuXctgLrXut1c-9wRoU9.jpg',
     duration: 45,
     ingredients: [
       '300g Cattle Hack',
@@ -188,14 +194,16 @@ const DUMMY_MEALS = const [
     isLactoseFree: true,
   ),
   Meal(
+    location: '경기 광주시 남종면 산수로 1686',
     id: 'm4',
     categories: [
       'c4',
     ],
-    title: 'Wiener Schnitzel',
+    title: '엘 포레스트',
     affordability: Affordability.Luxurious,
     complexity: Complexity.Challenging,
-    imageUrl: 'https://img.siksinhot.com/article/1571808806934051.jpeg',
+    imageUrl:
+        'https://search.pstatic.net/common/?autoRotate=true&quality=95&type=w750&src=https%3A%2F%2Fmyplace-phinf.pstatic.net%2F20220324_15%2F164810132579898XWm_JPEG%2Fupload_23e0bad77de64116f3a36f8555165d48.jpg',
     duration: 60,
     ingredients: [
       '8 Veal Cutlets',
@@ -222,16 +230,18 @@ const DUMMY_MEALS = const [
     isLactoseFree: false,
   ),
   Meal(
+    location: '경기 남양주시 와부읍 팔당로139번길 43',
     id: 'm5',
     categories: [
       'c2'
           'c5',
       'c10',
     ],
-    title: 'Salad with Smoked Salmon',
+    title: '팔당 자연애',
     affordability: Affordability.Luxurious,
     complexity: Complexity.Simple,
-    imageUrl: 'https://img.siksinhot.com/article/1571808806934051.jpeg',
+    imageUrl:
+        'https://search.pstatic.net/common/?autoRotate=true&quality=95&type=w750&src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20180816_44%2F15344191172844xlHW_JPEG%2FT5tnuUCx2S1ThyLYxR-Nvbmc.jpg',
     duration: 15,
     ingredients: [
       'Arugula',
@@ -257,15 +267,17 @@ const DUMMY_MEALS = const [
     isLactoseFree: true,
   ),
   Meal(
+    location: '경기 하남시 월호로 48-7',
     id: 'm6',
     categories: [
       'c6',
       'c10',
     ],
-    title: 'Delicious Orange Mousse',
+    title: '몽촌토성 보리밥 손칼국수',
     affordability: Affordability.Affordable,
     complexity: Complexity.Hard,
-    imageUrl: 'https://img.siksinhot.com/article/1571808806934051.jpeg',
+    imageUrl:
+        'https://search.pstatic.net/common/?autoRotate=true&quality=95&type=w750&src=https%3A%2F%2Fmyplace-phinf.pstatic.net%2F20211124_239%2F1637748437221K673D_JPEG%2Fupload_b9ca53c484d9e793a5cba6e12caee2e3.jpeg',
     duration: 240,
     ingredients: [
       '4 Sheets of Gelatine',
@@ -292,14 +304,16 @@ const DUMMY_MEALS = const [
     isLactoseFree: false,
   ),
   Meal(
+    location: '강원 평창군 용평면 운두령로 377-81',
     id: 'm7',
     categories: [
       'c7',
     ],
-    title: 'Pancakes',
+    title: '오복가든',
     affordability: Affordability.Affordable,
     complexity: Complexity.Simple,
-    imageUrl: 'https://img.siksinhot.com/article/1571808806934051.jpeg',
+    imageUrl:
+        'https://search.pstatic.net/common/?autoRotate=true&quality=95&type=w750&src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTEwMTRfMjY3%2FMDAxNjM0MjEyOTU3ODk0.1KA08Xgz4tEAckoYUqpE5j2ekoVqsCfxEq_29osBuAEg.iIxMxJw9JeHHLX3Isy2BGI9O0khxxrR0eYNveyrzhzsg.JPEG.anssy_%2Foutput_2504787364.jpg',
     duration: 20,
     ingredients: [
       '1 1/2 Cups all-purpose Flour',
@@ -322,14 +336,16 @@ const DUMMY_MEALS = const [
     isLactoseFree: false,
   ),
   Meal(
+    location: '충북 단양군 가곡면 새밭로 819',
     id: 'm8',
     categories: [
       'c8',
     ],
-    title: 'Creamy Indian Chicken Curry',
+    title: '홍가네',
     affordability: Affordability.Pricey,
     complexity: Complexity.Challenging,
-    imageUrl: 'https://img.siksinhot.com/article/1571808806934051.jpeg',
+    imageUrl:
+        'https://search.pstatic.net/common/?autoRotate=true&quality=95&type=w750&src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20220308_265%2F1646715824351LxMuS_JPEG%2Fimage.jpg',
     duration: 35,
     ingredients: [
       '4 Chicken Breasts',
@@ -354,14 +370,16 @@ const DUMMY_MEALS = const [
     isLactoseFree: true,
   ),
   Meal(
+    location: '강원 횡성군 횡성읍 문화체육로 40',
     id: 'm9',
     categories: [
       'c9',
     ],
-    title: 'Chocolate Souffle',
+    title: '횡성한우곰탕',
     affordability: Affordability.Affordable,
     complexity: Complexity.Hard,
-    imageUrl: 'https://img.siksinhot.com/article/1571808806934051.jpeg',
+    imageUrl:
+        'https://search.pstatic.net/common/?autoRotate=true&quality=95&type=w750&src=https%3A%2F%2Fmyplace-phinf.pstatic.net%2F20220102_110%2F1641116743947vFHva_JPEG%2Fupload_77ff9b0636ec6a87fee7a65a87f8958b.jpg',
     duration: 45,
     ingredients: [
       '1 Teaspoon melted Butter',
@@ -402,16 +420,18 @@ const DUMMY_MEALS = const [
     isLactoseFree: false,
   ),
   Meal(
+    location: '강원 홍천군 화촌면 굴운로75번길 20-5',
     id: 'm10',
     categories: [
       'c2',
       'c5',
       'c10',
     ],
-    title: 'Asparagus Salad with Cherry Tomatoes',
+    title: '신토불이',
     affordability: Affordability.Luxurious,
     complexity: Complexity.Simple,
-    imageUrl: 'https://img.siksinhot.com/article/1571808806934051.jpeg',
+    imageUrl:
+        'https://search.pstatic.net/common/?autoRotate=true&quality=95&type=w750&src=http%3A%2F%2Fblogfiles.naver.net%2FMjAxODAxMjJfOTYg%2FMDAxNTE2NTk0NjUzNDY3.H5FzhSjM2-qkp6yJqEXfIunyUt3UyxZgXbCsZa3W6kkg.hgMXTy5t5UDrpobhX0tqQSTtsqtYGIaBGddvpJvEjPYg.JPEG.soyeon-xx%2FP20180117_120526395_D41BB1EF-AA75-4199-B39C-8A1A0DFEB91F.JPG',
     duration: 30,
     ingredients: [
       'White and Green Asparagus',

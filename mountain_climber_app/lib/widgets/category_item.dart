@@ -46,7 +46,7 @@ class CategoryItem extends StatelessWidget {
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(15),
         ),
-        elevation: 5,
+        elevation: 10,
         child: Column(
           children: [
             Stack(

@@ -23,6 +23,7 @@ class MainDrawer extends StatelessWidget {
     }
 
     return Drawer(
+      backgroundColor: Colors.white,
       child: Column(
         children: [
           Container(
@@ -31,11 +32,13 @@ class MainDrawer extends StatelessWidget {
             padding: EdgeInsets.only(left: 20, top: 30),
             alignment: Alignment.centerLeft,
             color: Theme.of(context).accentColor,
-            child: Text('허동여지도',
-                style: TextStyle(
-                    fontWeight: FontWeight.w900,
-                    fontSize: 30,
-                    color: Theme.of(context).primaryColor)),
+            child: Text(
+              '허동여지도',
+              style: TextStyle(
+                  fontWeight: FontWeight.w900,
+                  fontSize: 30,
+                  color: Theme.of(context).primaryColor),
+            ),
           ),
           SizedBox(
             height: 20,
@@ -49,7 +52,7 @@ class MainDrawer extends StatelessWidget {
           ),
           buildListTile(
             '등산 지도',
-            Icons.settings,
+            Icons.map,
             () {
               Navigator.of(context)
                   .pushReplacementNamed(FiltersScreen.routeName);

@@ -9,6 +9,7 @@ class MealItem extends StatelessWidget {
   final Complexity complexity;
   final Affordability affordability;
   final id;
+  final String location;
 
   MealItem({
     @required this.id,
@@ -17,6 +18,7 @@ class MealItem extends StatelessWidget {
     @required this.affordability,
     @required this.duration,
     @required this.complexity,
+    @required this.location,
   });
 
   String get complexityText {
@@ -73,7 +75,7 @@ class MealItem extends StatelessWidget {
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(15),
         ),
-        elevation: 4,
+        elevation: 10,
         margin: EdgeInsets.all(10),
         child: Column(
           children: [
@@ -121,34 +123,12 @@ class MealItem extends StatelessWidget {
                   Row(
                     children: [
                       Icon(
-                        Icons.schedule,
+                        Icons.map,
                       ),
                       SizedBox(
                         width: 6,
                       ),
-                      Text('$duration min'),
-                    ],
-                  ),
-                  Row(
-                    children: [
-                      Icon(
-                        Icons.work,
-                      ),
-                      SizedBox(
-                        width: 6,
-                      ),
-                      Text(complexityText),
-                    ],
-                  ),
-                  Row(
-                    children: [
-                      Icon(
-                        Icons.attach_money,
-                      ),
-                      SizedBox(
-                        width: 6,
-                      ),
-                      Text(affordabilityText),
+                      Text(location),
                     ],
                   ),
                 ],

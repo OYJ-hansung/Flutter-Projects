@@ -13,8 +13,6 @@ class CategoryMealsScreen extends StatefulWidget {
 }
 
 class _CategoryMealsScreenState extends State<CategoryMealsScreen> {
-  // final String categoryId;
-
   String categoryTitle;
   List<Meal> displayedMeals;
   var _loadedInitData = false;
@@ -45,6 +43,7 @@ class _CategoryMealsScreenState extends State<CategoryMealsScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+        backgroundColor: Colors.white,
         appBar: AppBar(
           title: Text(categoryTitle),
         ),
@@ -57,6 +56,7 @@ class _CategoryMealsScreenState extends State<CategoryMealsScreen> {
               duration: displayedMeals[index].duration,
               affordability: displayedMeals[index].affordability,
               complexity: displayedMeals[index].complexity,
+              location: displayedMeals[index].location,
             );
           },
           itemCount: displayedMeals.length,
