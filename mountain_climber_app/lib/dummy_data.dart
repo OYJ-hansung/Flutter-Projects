@@ -17,7 +17,7 @@ const DUMMY_CATEGORIES = const [
     title: '지리산',
     color: Colors.red,
     imageUrl:
-        'https://pds.joongang.co.kr/news/component/htmlphoto_mmdata/202111/04/480408b2-383a-4b04-92c8-6f737e8d60f4.jpg',
+        'https://ww.namu.la/s/1186c83a1ec027560d4343ab734e7bc932823a704f34b0e7bc72efee974d4d76d70d0208d8789b717dc7f071b3d1690d388b108e1dbd613860fada6956979cf507918444be13b081bc362220c471fe62f9926995cb122df085dd147dbca37af9',
     difficulty: Difficulty.Hard,
     time: '5시간 40분',
   ),
@@ -53,7 +53,7 @@ const DUMMY_CATEGORIES = const [
     title: '관악산',
     color: Colors.green,
     imageUrl:
-        'https://ww.namu.la/s/e64381c1ee1cf6e9faad329f2628451e2f1d0e4fddf58dfbd0f26395cc2277c21def121bc804aa5a786e542c02292ed03a1dd845ab374992d91e5e1b16220df012382614d0e89d22ff0e7b38e7c94ccd5f1f630813754a0df569b6d5bf78cb7c04d77d765a317590b6e5d2b38ecbc70b',
+        'https://cdn.crowdpic.net/detail-thumb/thumb_d_98E884783E3EF20FD573D86951AD1FEC.jpg',
     difficulty: Difficulty.Simple,
     time: '2시간 20분',
   ),
