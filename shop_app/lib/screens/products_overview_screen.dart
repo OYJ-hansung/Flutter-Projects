@@ -1,39 +1,43 @@
 import 'package:flutter/material.dart';
-import '../widgets/products_grid.dart';
 import 'package:provider/provider.dart';
-import '../providers/products.dart';
+
+import '../widgets/app_drawer.dart';
+import '../widgets/products_grid.dart';
 import '../widgets/badge.dart';
 import '../providers/cart.dart';
 import './cart_screen.dart';
-import '../widgets/app_drawer.dart';
+import '../providers/products.dart';
 
-enum FilterOptions { Favorites, All }
-
-class ProductOverviewScreen extends StatefulWidget {
-  @override
-  State<ProductOverviewScreen> createState() => _ProductOverviewScreenState();
+enum FilterOptions {
+  Favorites,
+  All,
 }
 
-class _ProductOverviewScreenState extends State<ProductOverviewScreen> {
+class ProductsOverviewScreen extends StatefulWidget {
+  @override
+  _ProductsOverviewScreenState createState() => _ProductsOverviewScreenState();
+}
+
+class _ProductsOverviewScreenState extends State<ProductsOverviewScreen> {
   var _showOnlyFavorites = false;
   var _isInit = true;
   var _isLoading = false;
 
   @override
   void initState() {
-    // hack
-    // Provider.of<Products>(context).fetchAndSetProducts();
-    Future.delayed(Duration.zero).then((_) {
-      Provider.of<Products>(context).fetchAndSetProducts();
-    });
+    // Provider.of<Products>(context).fetchAndSetProducts(); // WON'T WORK!
+    // Future.delayed(Duration.zero).then((_) {
+    //   Provider.of<Products>(context).fetchAndSetProducts();
+    // });
     super.initState();
   }
 
   @override
   void didChangeDependencies() {
     if (_isInit) {
-      _isLoading = true;
-      // if runs for the first time!
+      setState(() {
+        _isLoading = true;
+      });
       Provider.of<Products>(context).fetchAndSetProducts().then((_) {
         setState(() {
           _isLoading = false;
@@ -48,8 +52,8 @@ class _ProductOverviewScreenState extends State<ProductOverviewScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('MyShop'),
-        actions: [
+        title: Text('MyShop'),
+        actions: <Widget>[
           PopupMenuButton(
             onSelected: (FilterOptions selectedValue) {
               setState(() {
@@ -64,30 +68,30 @@ class _ProductOverviewScreenState extends State<ProductOverviewScreen> {
               Icons.more_vert,
             ),
             itemBuilder: (_) => [
-              PopupMenuItem(
-                child: Text('Only Favorites'),
-                value: FilterOptions.Favorites,
-              ),
-              PopupMenuItem(
-                child: Text('Show All'),
-                value: FilterOptions.All,
-              )
-            ],
+                  PopupMenuItem(
+                    child: Text('Only Favorites'),
+                    value: FilterOptions.Favorites,
+                  ),
+                  PopupMenuItem(
+                    child: Text('Show All'),
+                    value: FilterOptions.All,
+                  ),
+                ],
           ),
           Consumer<Cart>(
-              builder: (_, cart, ch) => Badge(
-                    child: ch,
-                    value: cart.itemCount.toString(),
-                  ),
-              child: IconButton(
-                //does not rebuild
-                icon: Icon(
-                  Icons.shopping_cart,
+            builder: (_, cart, ch) => Badge(
+                  child: ch,
+                  value: cart.itemCount.toString(),
                 ),
-                onPressed: () {
-                  Navigator.of(context).pushNamed(CartScreen.routeName);
-                },
-              )),
+            child: IconButton(
+              icon: Icon(
+                Icons.shopping_cart,
+              ),
+              onPressed: () {
+                Navigator.of(context).pushNamed(CartScreen.routeName);
+              },
+            ),
+          ),
         ],
       ),
       drawer: AppDrawer(),
